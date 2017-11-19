@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Javascript hide and show</title>
+</head>
+
+<body>
+<button onclick="toggleMe()">Click me</button>
+<div id="demo" style="background-color:dodgerblue; width: 100px; height: 100px;"></div>
+
+<script>
+//Explanation
+
+//This is the toggle button method
+function toggleMe()
+{
+	//This variable will get the id='demo'
+	var x = document.getElementById("demo");
+	
+	//Check if empty or not
+	
+	if(x.style.display == 'none')
+	{
+		x.style.display = 'block';	
+	}else
+	{
+		x.style.display = 'none';
+	}
+}
+</script>
+
+</body>
+</html>
